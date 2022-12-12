@@ -5,12 +5,15 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.ril.tutorialmod.TutorialMod;
+import net.ril.tutorialmod.item.custom.DiceItem;
 
 public class ModItems {
     public static final Item RAW_TANZANITE = registerItem("raw_tanzanite",
             new Item(new FabricItemSettings().group(ModItemGroup.Tanzanite)));
     public static final Item TANZANITE = registerItem("tanzanite",
             new Item(new FabricItemSettings().group(ModItemGroup.Tanzanite)));
+    public static final Item CUBE_DICE = registerItem("cube_dice",
+            new DiceItem(new FabricItemSettings().group(ModItemGroup.Tanzanite).maxCount(1)));
 
 
     private static Item registerItem(String name, Item item) {
